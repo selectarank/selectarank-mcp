@@ -8,7 +8,9 @@
       "registryType": "npm",
       "identifier": "@selectarank/selectarank-mcp",
       "version": "0.1.0",
-      "transport": { "type": "stdio" },
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
         {
           "name": "EVM_PRIVATE_KEY",
@@ -24,5 +26,9 @@
         }
       ]
     }
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/selectarank/selectarank-mcp",
+    "source": "github"
+  }
 }
