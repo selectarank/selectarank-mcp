@@ -34,14 +34,14 @@ Requires Node.js 18+.
   "mcpServers": {
     "selectarank": {
       "command": "npx",
-      "args": ["-y", "@selectarank/selectarank-mcp"],
+      "args": ["-y", "github:selectarank/selectarank-mcp"],
       "env": { "EVM_PRIVATE_KEY": "0x..." }
     }
   }
 }
 ```
 
-Omit `env` to run without paying (see below).
+Omit `env` to run without paying (see below). Installed straight from GitHub for now; it is not yet published to npm.
 
 ## Environment variables
 
