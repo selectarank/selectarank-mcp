@@ -1,0 +1,45 @@
+{
+  "name": "@selectarank/selectarank-mcp",
+  "version": "0.1.0",
+  "mcpName": "io.github.selectarank/selectarank-mcp",
+  "description": "MCP server for the SelectaRank x402 data gateway (USGS earthquakes, NOAA weather, World Bank, x402 preflight). Pay per call in USDC on Base.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "selectarank-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "x402",
+    "usdc",
+    "base",
+    "earthquake",
+    "weather",
+    "worldbank"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "@x402/evm": "^2.27.0",
+    "@x402/fetch": "^2.27.0",
+    "viem": "^2.57.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}
