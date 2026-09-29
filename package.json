@@ -2,7 +2,7 @@
   "name": "selectarank-mcp",
   "version": "0.1.0",
   "mcpName": "io.github.selectarank/selectarank-mcp",
-  "description": "MCP server for the SelectaRank x402 data gateway (USGS earthquakes, NOAA weather, World Bank, x402 preflight). Pay per call in USDC on Base.",
+  "description": "MCP server for the SelectaRank x402 data gateway (US/JP yield curves, ECB FX, SEC filings, USGS, NOAA, World Bank, x402 preflight). Pay per call in USDC on Base.",
   "license": "MIT",
   "type": "module",
   "bin": {

@@ -13,9 +13,13 @@ Tools are generated from the gateway's `/openapi.json` at startup (a built-in co
 | `selectarank_earthquakes` | `GET /v1/earthquakes/{feed}` | 0.002 | USGS |
 | `selectarank_weather` | `GET /v1/weather/{lat}/{lon}` (US only) | 0.003 | NOAA/NWS |
 | `selectarank_worldbank` | `GET /v1/worldbank/{country}/{indicator}` | 0.002 | World Bank |
+| `selectarank_jgbYields` | `GET /v1/jp/jgb-yields?days=` | 0.002 | Japan government bond yield curve 1Y-40Y (Ministry of Finance, PDL 1.0) |
+| `selectarank_ustYields` | `GET /v1/us/treasury-yields?days=` | 0.002 | US Treasury par yield curve (US Treasury) |
+| `selectarank_ecbFx` | `GET /v1/eu/ecb-fx?currencies=&days=` | 0.002 | ECB euro reference FX rates |
+| `selectarank_secFilings` | `GET /v1/us/sec/filings/{cik}` | 0.003 | Recent SEC EDGAR filings by CIK, with document URLs |
 | `selectarank_preflight` | `GET /v1/preflight?url=` | 0.010 | Checks another x402 endpoint's 402 challenge (one unauthenticated GET, no funds move) |
 
-The earthquake, weather and World Bank tools return public-domain upstream data wrapped with source and license metadata. The gateway is a passthrough; it does not produce its own data.
+The data tools (earthquakes, weather, World Bank, JGB/US yields, ECB FX, SEC filings) return public-domain upstream data wrapped with source and license metadata. The gateway is a passthrough; it does not produce its own data.
 
 ## Payment
 
